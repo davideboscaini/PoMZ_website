@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="PoMZ: Object 6D Pose Estimation Meets Zero-Shot Learning">
+  <meta name="keywords" content="PomZ">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PoMZ: Object 6D Pose Estimation Meets Zero-Shot Learning</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" type="image/x-icon" href="./static/images/icon-5.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">PoMZ: Object 6D Pose Estimation Meets Zero-Shot Learning</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=ARB9u4cAAAAJ">Andrea Caraffa</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=dT1N2IUAAAAJ">Davide Boscaini</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=GYZWQrAAAAAJ">Amir Hamza</a><sup>1,2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=BQ7li6AAAAAJ">Fabio Poiesi</a><sup>1</sup>
+            </span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>TeV - Fondazione Bruno Kessler</span>
+            <span class="author-block"><sup>2</sup>University of Trento</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="" class="external-link button is-normal is-rounded is-dark[disabled]" style="pointer-events: none">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img  src="./static/images/teaser.png">
+      <p></p>
+      <h2 class="subtitle has-text-centered" style="margin-top: 30px;">
+        <span class="dnerf">PoMZ</span> estimates the 6D pose of a novel object by fusing the contributions from pre-trained
+         geometric and vision foundation models without requiring any task-specific training.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <video poster="" id="ycbv-54" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ycbv-54.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" id="ycbv-53" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ycbv-53.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" id="ycbv-50" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ycbv-50.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" id="ycvb-52" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ycbv-52.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" id="tudl-01" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/tudl-01.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" id="tudl-02" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/tudl-02.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" id="tudl-03" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/tudl-03.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Object 6D pose estimation methods can achieve high accuracy when trained and tested on the same objects.
+            However, estimating the pose of objects that are absent at training time is still a challenge.
+          </p>
+          <p>
+            In this work, we advance the state-of-the-art in zero-shot object 6D pose estimation by proposing
+            the first method that fuses the contribution of pre-trained geometric and vision foundation models
+          </p>
+          <p>
+            Unlike state-of-the-art approaches that train their pipeline on data specifically crafted for 
+            the 6D pose estimation task, our method does not require task-specific finetuning. 
+            Instead, our method, which we name PoMZ, combines geometric descriptors learned from point cloud data
+            with visual features learned from large-scale web images to produce distinctive 3D point-level descriptors. 
+            By applying an off-the-shelf registration algorithm, like RANSAC, PoMZ outperforms all state-of-the-art
+            zero-shot object 6D pose estimation approaches.
+          </p>
+          <p>
+            We extensively evaluate PoMZ across the seven core datasets of the BOP Benchmark, encompassing over
+            a hundred objects and 20 thousand images captured in diverse scenarios.
+            PoMZ ranks first in the BOP Benchmark under the category Task 4: 6D localization of unseen objects. We
+            will release the source code publicly.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+  </div>
+</section>
+
+
+  <!-- Method. -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Method</h2>
+          <img src="./static/images/architecture.png" alt="Architecture of SNOPS" />
+          <div class="content has-text-justified" style="margin-top: 30px;">
+            <p>
+              Given a 3D model of a <b>novel</b> query object and an RGBD image, we compute their <b>geometric</b> and
+              <b>visual features</b> using <b>frozen </b> <b>geometric</b> and <b>vision foundation models</b> which do not require any task-speficic training.
+            </p>
+            </p>
+            <p>
+            We create rendered images from the 3D model to extract <b>visual features</b> of the query object,
+            which we then back project to the object point cloud. Concurrently, we extract <b>geometric features</b>,
+            which we then fuse with the visual features.
+            <p>
+            Similarly, we compute <b>visual</b> and <b>geometric features</b> of the target object imaged in the input crop, and fuse the two
+            as before. Although the query and target objects are from two different modalities (a 3D model the former, and a RGBD image the latter),
+            we employ the same vision and geometric encoders to compute their features. 
+            <p>
+            Lastly, we input the <b>fused features</b> to a <b>registration</b> algorithm based on feature matching to estimate the <b>object 6D pose</b>.
+             </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Method. -->
+
+
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{caraffa2023pomz,
+        title={Object 6D pose estimation meets zero-shot learning}, 
+        author = {Caraffa, Andrea and Boscaini, Davide and Hamza, Amir and Poiesi, Fabio},
+        year={2023},
+        booktitle={arXiv:}
+      }</code></pre>
+
+      <pre><code>@article{}</code></pre>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <a class="icon-link" href="">
+          <i class="fas fa-file-pdf"></i>
+        </a>
+        <a class="icon-link" href="" class="external-link" disabled>
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+              The webpage template is from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
