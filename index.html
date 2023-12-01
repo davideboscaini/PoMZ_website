@@ -2,21 +2,17 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description"
-        content="PoMZ: Object 6D Pose Estimation Meets Zero-Shot Learning">
+  <meta name="description" content="PoMZ: Object 6D Pose Estimation Meets Zero-Shot Learning">
   <meta name="keywords" content="PomZ">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PoMZ: Object 6D Pose Estimation Meets Zero-Shot Learning</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" type="image/x-icon" href="./static/images/icon-5.png">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -58,7 +54,7 @@
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://arxiv.org/pdf/2011.12948"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -66,7 +62,7 @@
                   </span>
                   <span>Paper</span>
                 </a>
-              </span>
+              </span> -->
               <span class="link-block">
                 <a href="https://arxiv.org/abs/2011.12948"
                    class="external-link button is-normal is-rounded is-dark">
@@ -176,18 +172,14 @@
             the first method that fuses the contribution of pre-trained geometric and vision foundation models
           </p>
           <p>
-            Unlike state-of-the-art approaches that train their pipeline on data specifically crafted for 
-            the 6D pose estimation task, our method does not require task-specific finetuning. 
-            Instead, our method, which we name PoMZ, combines geometric descriptors learned from point cloud data
-            with visual features learned from large-scale web images to produce distinctive 3D point-level descriptors. 
-            By applying an off-the-shelf registration algorithm, like RANSAC, PoMZ outperforms all state-of-the-art
-            zero-shot object 6D pose estimation approaches.
+            Unlike state-of-the-art approaches that train their pipeline on data specifically crafted for the 6D pose estimation task, our method does not require task-specific finetuning.
+            Instead, our method, which we name PoMZ, combines geometric descriptors learned from point cloud data with visual features learned from large-scale web images to produce distinctive 3D point-level descriptors.
+            By applying an off-the-shelf registration algorithm, like RANSAC, PoMZ outperforms all state-of-the-art zero-shot object 6D pose estimation approaches.
           </p>
           <p>
-            We extensively evaluate PoMZ across the seven core datasets of the BOP Benchmark, encompassing over
-            a hundred objects and 20 thousand images captured in diverse scenarios.
-            PoMZ ranks first in the BOP Benchmark under the category Task 4: 6D localization of unseen objects. We
-            will release the source code publicly.
+            We extensively evaluate PoMZ across the seven core datasets of the BOP Benchmark, encompassing over a hundred objects and 20 thousand images captured in diverse scenarios.
+            Our results are publicly available on the BOP Benchmark website, under the category Task 4: 6D localization of unseen objects.
+            We will release the source code publicly.
           </p>
         </div>
       </div>

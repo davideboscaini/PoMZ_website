@@ -1,13 +1,13 @@
 # PoMZ: Object 6D Pose Estimation Meets Zero-Shot Learning
 
-This is the repository that contains source code for the [PoMZ website](https://davideboscaini.github.io/PoMZ_website/).
+This is the repository that contains source code for the [PoMZ website](https://davideboscaini.github.io/PoMZ_website/). The website template is from [Nerfies](https://github.com/nerfies/nerfies.github.io).
 
 If you find PoMZ useful for your work, please cite:
 
 ```bibtex
 @article{caraffa2023pomz,
   author = {Caraffa, Andrea and Boscaini, Davide and Hamza, Amir and Poiesi, Fabio},
-  title = {Object 6D Pose Estimation Meets Zero-Shot Learning},
+  title = {Object 6D pose estimation meets zero-shot learning},
   journal = {arXiv:},
   year = {2023},
 }
