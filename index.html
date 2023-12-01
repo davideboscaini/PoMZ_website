@@ -31,7 +31,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">PoMZ: Object 6D Pose Estimation Meets Zero-Shot Learning</h1>
+          <h1 class="title is-1 publication-title">PoMZ: Object 6D Pose Estimation<br> Meets Zero-Shot Learning</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://scholar.google.com/citations?user=ARB9u4cAAAAJ">Andrea Caraffa</a><sup>1</sup>,
@@ -53,31 +53,18 @@
 
           <div class="column has-text-centered">
             <div class="publication-links">
-              <!-- PDF Link. -->
-              <!-- <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span> -->
+              <!-- arXiv Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
+                <a href="https://arxiv.org/abs/"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="ai ai-arxiv"></i></span>
                   <span>arXiv</span>
                 </a>
               </span>
               <!-- Code Link. -->
               <span class="link-block">
                 <a href="" class="external-link button is-normal is-rounded is-dark[disabled]" style="pointer-events: none">
-                  <span class="icon">
-                    <i class="fab fa-github"></i>
-                  </span>
+                  <span class="icon"><i class="fab fa-github"></i></span>
                   <span>Code</span>
                 </a>
               </span>
@@ -110,44 +97,37 @@
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item">
           <video poster="" id="ycbv-54" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/ycbv-54.mp4"
-                    type="video/mp4">
+            <source src="./static/videos/ycbv-54.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item">
           <video poster="" id="ycbv-53" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/ycbv-53.mp4"
-                    type="video/mp4">
+            <source src="./static/videos/ycbv-53.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item">
           <video poster="" id="ycbv-50" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/ycbv-50.mp4"
-                    type="video/mp4">
+            <source src="./static/videos/ycbv-50.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item">
           <video poster="" id="ycvb-52" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/ycbv-52.mp4"
-                    type="video/mp4">
+            <source src="./static/videos/ycbv-52.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item">
           <video poster="" id="tudl-01" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/tudl-01.mp4"
-                    type="video/mp4">
+            <source src="./static/videos/tudl-01.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item">
           <video poster="" id="tudl-02" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/tudl-02.mp4"
-                    type="video/mp4">
+            <source src="./static/videos/tudl-02.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item">
           <video poster="" id="tudl-03" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/tudl-03.mp4"
-                    type="video/mp4">
+            <source src="./static/videos/tudl-03.mp4" type="video/mp4">
           </video>
         </div>
       </div>
@@ -202,19 +182,15 @@
               Given a 3D model of a <b>novel</b> query object and an RGBD image, we compute their <b>geometric</b> and
               <b>visual features</b> using <b>frozen </b> <b>geometric</b> and <b>vision foundation models</b> which do not require any task-speficic training.
             </p>
+            <p>
+              We create rendered images from the 3D model to extract <b>visual features</b> of the query object, which we then back project to the object point cloud.
+              Concurrently, we extract <b>geometric features</b>, which we then fuse with the visual features.
+            <p>
+              Similarly, we compute <b>visual</b> and <b>geometric features</b> of the target object imaged in the input crop, and fuse the two as before.
+              Although the query and target objects are from two different modalities (a 3D model the former, and a RGBD image the latter), we employ the same vision and geometric encoders to compute their features. 
+            <p>
+              Lastly, we input the <b>fused features</b> to a <b>registration</b> algorithm based on feature matching to estimate the <b>object 6D pose</b>.
             </p>
-            <p>
-            We create rendered images from the 3D model to extract <b>visual features</b> of the query object,
-            which we then back project to the object point cloud. Concurrently, we extract <b>geometric features</b>,
-            which we then fuse with the visual features.
-            <p>
-            Similarly, we compute <b>visual</b> and <b>geometric features</b> of the target object imaged in the input crop, and fuse the two
-            as before. Although the query and target objects are from two different modalities (a 3D model the former, and a RGBD image the latter),
-            we employ the same vision and geometric encoders to compute their features. 
-            <p>
-            Lastly, we input the <b>fused features</b> to a <b>registration</b> algorithm based on feature matching to estimate the <b>object 6D pose</b>.
-             </p>
-
           </div>
         </div>
       </div>
@@ -228,11 +204,11 @@
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>
-      @inproceedings{caraffa2023pomz,
-        title={Object 6D pose estimation meets zero-shot learning}, 
+      @article{caraffa2023pomz,
+        title = {Object 6D pose estimation meets zero-shot learning},
         author = {Caraffa, Andrea and Boscaini, Davide and Hamza, Amir and Poiesi, Fabio},
-        year={2023},
-        booktitle={arXiv:}
+        journal = {arXiv:},
+        year = {2023}
       }
       </code></pre>
     </div>
