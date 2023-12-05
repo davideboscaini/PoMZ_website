@@ -176,17 +176,17 @@
           <img src="./static/images/architecture.png" alt="Architecture of SNOPS" />
           <div class="content has-text-justified" style="margin-top: 30px;">
             <p>
-              Given a 3D model of a <b>novel</b> query object and an RGBD image, we compute their <b>geometric</b> and
-              <b>visual features</b> using <b>frozen </b> <b>geometric</b> and <b>vision foundation models</b> which do not require any task-speficic training.
+              Given a 3D model of a novel query object and an RGBD image, we compute their geometric and
+              visual features using frozen geometric and vision foundation models which do not require any task-speficic training.
             </p>
             <p>
-              We create rendered images from the 3D model to extract <b>visual features</b> of the query object, which we then back project to the object point cloud.
-              Concurrently, we extract <b>geometric features</b>, which we then fuse with the visual features.
+              We create rendered images from the 3D model to extract visual features of the query object, which we then back project to the object point cloud.
+              Concurrently, we extract geometric features, which we then fuse with the visual features.
             <p>
-              Similarly, we compute <b>visual</b> and <b>geometric features</b> of the target object imaged in the input crop, and fuse the two as before.
-              Although the query and target objects are from two different modalities (a 3D model the former, and an RGBD image the latter), we employ the same vision and geometric encoders to compute their features. 
+              Similarly, we compute visual and geometric features of the target object imaged in the input crop, and fuse the two as before.
+              Although the query and target objects are from two different modalities (a 3D model the former, and an RGBD image the latter), we employ the same vision and geometric encoders to compute their features.
             <p>
-              Lastly, we input the <b>fused features</b> to a <b>registration</b> algorithm based on feature matching to estimate the <b>object 6D pose</b>.
+              Lastly, we input the fused features to a registration algorithm based on feature matching to estimate the object 6D pose.
             </p>
           </div>
         </div>
